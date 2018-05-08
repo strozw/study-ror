@@ -24,5 +24,3 @@ COPY . $APP_ROOT
 
 RUN  bundle install --jobs 4
 RUN  yarn install
-
-EXPOSE  3000
