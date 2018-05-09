@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
 
-gem 'thor', '~> 0.19.1'
+gem 'thor', '0.19.1'
 # Manage multi applications
 gem 'foreman'
 
@@ -48,6 +48,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'ruby-debug-ide'
+  gem 'debase'
 end
 
 group :test do
