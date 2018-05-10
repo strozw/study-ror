@@ -2,11 +2,11 @@
 include:
 - "**/*.rb"
 exclude:
-- .git/**/*
 - spec/**/*
 - test/**/*
-- vendor/bundle/**/*
-reporters: []
+- vendor/**/*
+require: []
 domains: []
-required: []
+reporters: []
 plugins: []
+max_files: 5000
