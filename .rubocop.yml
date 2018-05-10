@@ -1,5 +1,6 @@
 inherit_gem:
   rubocop-rails:
     - config/rails.yml
+AllCops:
   Exclude:
     - 'vendor/bundle/**/*'
