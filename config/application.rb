@@ -28,7 +28,6 @@ module StudyRor
       g.helper false
       g.test_framework :rspec,
         fixtures: true,
-        model_specs: true,
         view_specs: false,
         helper_specs: false,
         routing_specs: false,
