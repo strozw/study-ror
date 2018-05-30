@@ -4,11 +4,13 @@ require_relative "boot"
 
 require "rails/all"
 
-require 'neo4j/railtie'
+require "neo4j/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+
+Dotenv::Railtie.load
 
 module StudyRor
   class Application < Rails::Application
@@ -34,5 +36,9 @@ module StudyRor
         request_specs: false
       g.fixture_replacement :factory_bot, dir: "spec/factories"
     end
+
+    # neo4j configs
+    config.neo4j.session.type = ENV["NEO4J_TYPE"]
+    config.neo4j.session.url = ENV["NEO4J_URL"]
   end
 end
