@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Api::VERSION
   s.authors     = ["strozw"]
   s.email       = ["sxtxrxoxzxw@gmail.com"]
-  s.homepage    = ""
-  s.summary     = "Summary of Api."
-  s.description = "Description of Api."
+  s.homepage    = "TODO"
+  s.summary     = "TODO: Summary of Api."
+  s.description = "TODO: Description of Api."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
