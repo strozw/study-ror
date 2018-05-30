@@ -1,8 +1,9 @@
+# frozen_string_literal: true
 
-class Graph::produced
+class Graph::Wrote
   include Neo4j::ActiveRel
 
-  type "PRODUCED"
+  type "WROTE"
   from_class "Graph::Person"
   to_class "Graph::Movie"
 end
