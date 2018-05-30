@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreatePerson < Neo4j::Migrations::Base
   def up
     add_constraint :Person, :uuid
