@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root "root#index"
   mount Api::Engine => "/api"
+
+  root "root#index"
+  get "/*path", to: "root#index"
 end
