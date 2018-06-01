@@ -4,10 +4,12 @@ class Graph::Movie
   include Neo4j::ActiveNode
 
   self.mapped_label_name = "Movie"
+  id_property :neo_id
 
   property :title, type: String
   property :tagline, type: String
   property :released, type: Date
+
 
   has_many :in, :actors, model_class: "Graph::Person", rel_class: "Graph::ActedIn"
   has_many :in, :directors, model_class: "Graph::Person", rel_class: "Graph::Directed"

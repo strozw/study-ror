@@ -4,6 +4,7 @@ class Graph::Person
   include Neo4j::ActiveNode
 
   self.mapped_label_name = "Person"
+  id_property :neo_id
 
   property :name, type: String
   property :born, type: Date
