@@ -1,7 +1,12 @@
 import React from 'react'
+import { Flex, Box } from 'rebass'
 import { renderRoutes } from 'react-router-config'
-import Drawer from './organisms/Drawer'
+import Sidebar from './organisms/Sidebar'
 import Header from './organisms/Header'
+
+const MainBox = Box.extend`
+  min-height: 100vh;
+`
 
 export default class App extends React.Component {
   constructor(props) {
@@ -17,9 +22,13 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Drawer open="{this.state.drawerOpen}" />
         <Header title={this.props.title} menuClick={this.menuClick} />
-        <main className="mdc-top-app-bar--fixed-adjust">{renderRoutes(this.props.route.routes)}</main>
+        <Flex className="mdc-top-app-bar--fixed-adjust">
+          <Sidebar open="{this.state.drawerOpen}" />
+          <MainBox width="100%">
+            {renderRoutes(this.props.route.routes)}
+          </MainBox>
+        </Flex>
       </div>
     )
   }

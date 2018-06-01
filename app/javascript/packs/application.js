@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom'
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 
-import { Route } from 'react-router'
 import { renderRoutes } from 'react-router-config'
+
 import {
   ConnectedRouter,
   routerMiddleware,

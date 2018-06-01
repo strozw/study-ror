@@ -2,6 +2,8 @@ import React from 'react'
 import { renderRoutes } from 'react-router-config'
 import App from './components/App'
 import Home from './components/pages/Home'
+import Movies from './components/pages/Movies'
+import Persons from './components/pages/Persons'
 
 const Child = ({ route }) => (
   <div>
@@ -28,14 +30,12 @@ const routes = [
         component: Home
       },
       {
-        path: '/child/:id',
-        component: Child,
-        routes: [
-          {
-            path: '/child/:id/grand-child',
-            component: GrandChild
-          }
-        ]
+        path: '/movies',
+        component: Movies
+      },
+      {
+        path: '/persons',
+        component: Persons
       }
     ]
   }
