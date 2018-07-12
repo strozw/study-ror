@@ -13,7 +13,9 @@ export default class Movies extends React.Component {
                 Second-line text
               </span>
             </span>
-            <span class="mdc-list-item__meta material-icons" aria-hidden="true">info</span>
+            <span class="mdc-list-item__meta material-icons" aria-hidden="true">
+              info
+            </span>
           </li>
           <li role="separator" class="mdc-list-divider" />
 
@@ -24,7 +26,9 @@ export default class Movies extends React.Component {
                 Second-line text
               </span>
             </span>
-            <span class="mdc-list-item__meta material-icons" aria-hidden="true">info</span>
+            <span class="mdc-list-item__meta material-icons" aria-hidden="true">
+              info
+            </span>
           </li>
 
           <li role="separator" class="mdc-list-divider" />
@@ -35,7 +39,9 @@ export default class Movies extends React.Component {
                 Second-line text
               </span>
             </span>
-            <span class="mdc-list-item__meta material-icons" aria-hidden="true">info</span>
+            <span class="mdc-list-item__meta material-icons" aria-hidden="true">
+              info
+            </span>
           </li>
           <li role="separator" class="mdc-list-divider" />
         </ul>
